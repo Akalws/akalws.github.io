@@ -1,2 +1,2 @@
-# my fisrt repository
+# my first repository
 
