@@ -2,18 +2,11 @@
 /* Activity 1 styles */
 .content1 {
   /* This is the parent of the activity 1 boxes. */
-<<<<<<< HEAD
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   grid-gap: 20px;
-=======
-<<<<<<< HEAD
-=======
-  
->>>>>>> 9d974812ab7676f192b114a8870c5cf2327f40e6
-
->>>>>>> f4add246e127059834f0e0fb0319d5c2262bb3dd
 }
 .red1 { 
   width: 100%; 
