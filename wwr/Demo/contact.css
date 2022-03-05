@@ -1,0 +1,41 @@
+body,h1,h2,h3,h4,h5,h6,ul,li,p{
+    margin:0 ;
+    padding: 0;
+    font-size: 14px;
+}
+body{
+
+    background-color: #f9d67c;
+
+}
+
+a:link, a:visited, a:hover , a:active{
+    color:#478ecb;
+}
+h2{
+    color: black;
+    font-size: 1.3em;
+    margin-bottom: 35px;
+}
+ul{
+    list-style: none;
+    font-size: 1.16em;
+}
+main{
+    display:grid;
+    grid-template-columns: 250px 400px;
+    gap: 65px;
+    margin: 10 auto;
+    width :715px;
+}
+main img{
+    width:100%;
+}
+main ul{
+    color:#478ecb;
+    font-size: 1.26em;
+
+}
+a:hover{
+    color:aqua;
+}
