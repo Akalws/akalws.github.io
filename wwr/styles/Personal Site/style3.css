@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+body {
+  font-size: 20px;
+  background-color: #EAF6FF;
+}
+
+#content {
+  width: 1500px;
+  background-color: #F1E9DB;
+  margin: 0 auto;
+}
+
+header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 0;
+}
+
+nav a {
+  color: Black;
+  font-size: 2em;
+  font-family: "Amatic SC", Arial, Georgia;
+  padding: 1em;
+  margin-left: 2.5em;
+  min-width: 70px;
+}
+
+nav a:hover {
+  color: #ECBA82;
+  background-color: #EAF6FF;
+}
+
+img {
+  max-width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+.contact{
+    max-width: unset;
+    height:900px ;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+  
+main {
+  display: grid;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.banner-box {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: #C6DEA6;
+  font-family: "Architects Daughter", Arial, Georgia;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font-family: "Architects Daughter", Arial, Georgia;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.social {
+  grid-column: 2/3;
+  text-align: right;
+}
+
+@media screen and (max-width: 550px) {
+  .home-grid,
+  nav ul,
+  .banner-box {
+    display: block;
+  }
+}

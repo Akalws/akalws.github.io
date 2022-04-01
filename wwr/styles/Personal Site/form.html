@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style3.css" />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div class="logo-box">
+          <img
+            src="/wwr/image/logo.png"
+            alt="Logo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="feedback"></div>
+
+      <main>
+        <div class="banner-box">
+          <img class = "contact"
+            src="/wwr/styles/Personal Site/images/page3of2.jpg"
+            alt="wide view"
+          />
+        </div>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Enter your full name"
+              />
+            </li>
+            <li>
+              <label for="tel">Phone Number:</label>
+              <input
+                id="tel"
+                name="user_phone_number"
+                placeholder="Enter your phone number"
+              />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea
+                id="msg"
+                name="user_message"
+                placeholder="Please tell me your needs!"
+              ></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+      </main>
+
+      <footer>
+        <a href="site-plan.html" target="_blank"
+          >&copy; 2021 Dry Oar - Daniel Akalws - Section 2</a
+        >
+        <div class="social">
+          <a
+            href="https://www.instagram.com/akalws/"
+            target="_blank"
+          >
+            <img
+              src="/wwr/image/instagram.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </footer>
+
+      <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById("feedback");
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener("submit", function(e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML =
+            "Hello " +
+            formElement.user_name.value +
+            "! Thank you for your message. I will get back with you as soon as possible!";
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+          // add a class to move everything down so our message doesn't cover it.
+          document.body.classList.toggle("moveDown");
+        });
+      </script>
+    </div>
+  </body>
+</html>
